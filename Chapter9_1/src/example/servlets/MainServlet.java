@@ -20,6 +20,13 @@ public class MainServlet extends HttpServlet {
         
         // save this movies String array to request scope and name it movieList
         request.setAttribute("movieList", movies);
+        
+        // create order number Integer objects array:
+        Integer[] numbers = new Integer[]{1,2,3,4,5,6,7,8,9};
+        
+        // save this numbers Integer array to request scope and name it numberList:
+        request.setAttribute("numberList", numbers); 
+        
         // make RequestDispatcher object using request object:
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("Result.jsp");
         // use forward method to send request and response objkects to same server 
