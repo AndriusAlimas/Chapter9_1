@@ -48,8 +48,12 @@ like this started http so we know we using jstl because we say that --%>
 	<%-- begin and end attribute just give starting and end point of loop, and step
 	how you will iterate this time +3  --%>
 	<br><h3>Last example using same forEach tag but in addition we put attributes step begin and end:</h3>
-	<c:forEach var="number" items="${numbers}" begin='3' end='9' step='3'>
-		 <c:out value='$number'/>
-	</c:forEach>
+	<table border='0'>
+		<tr><td>Number</td></tr>
+		<c:forEach var="number" items="${numbers}" begin='3' end='9' step='3'>
+		 <tr><td>${number}</td></tr>
+		</c:forEach>
+	</table>
+	
 </body>
 </html>
