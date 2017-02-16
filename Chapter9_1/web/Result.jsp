@@ -35,14 +35,12 @@ like this started http so we know we using jstl because we say that --%>
 	and this variable hold an instance of javax.servlet.jsp.jstl.core.--%>
 	<br><h3>Example using of c:forEach tag but this time with optional attribute varStatus:</h3>
 	<table border="3">
+		<tr><td>Counter</td><td>Movies</td></tr>
 		<c:forEach var="movie" items="${movieList}" varStatus="movie_counter">
 			<tr>
 				<!--Helpfully, the Loop TagStatus class has a count property that gives
 					you the current value of the iteration counter.(Like the "i" in a for loop.)-->
-				<td>Count: ${movie_counter.count}</td>
-			</tr>
-			<tr>
-				<td>${movie}</td>
+				<td>Count: ${movie_counter.count}</td>	<td>${movie}</td>
 			</tr>
 		</c:forEach>
 	</table>
