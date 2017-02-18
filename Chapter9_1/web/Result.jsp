@@ -50,7 +50,7 @@ like this started http so we know we using jstl because we say that --%>
 	<br><h3>Last example using same forEach tag but in addition we put attributes step begin and end:</h3>
 	<table border='0'>
 		<tr><td>Number</td></tr>
-			<c:forEach var="number" items="numberList" begin='9' end='2' step='-2'>
+			<c:forEach var="number" items="numberList" begin='8' end='2' step='-2'>
 		 		<tr><td>${number}</td></tr>
 		</c:forEach>
 	</table>
