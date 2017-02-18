@@ -51,7 +51,7 @@ like this started http so we know we using jstl because we say that --%>
 	<table border='0'>
 		<tr><td>Number</td></tr>
 		<%-- you cannot do reverse order in here like step='-2' --%>
-			<c:forEach var="number" items="numberList" begin='3' end='8' step='2'>
+			<c:forEach var="number" items="numberList" begin='1' end='8' step='2'>
 		 		<tr><td>${number}</td></tr>
 		</c:forEach>
 	</table>
